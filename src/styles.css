@@ -1,0 +1,102 @@
+:root {
+  --main-color: olive;
+  --secondary-color: rgb(161, 161, 43);
+  --danger-color: rgb(105, 61, 61);
+}
+.App {
+  margin: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  width: 100vw;
+  height: 100vh;
+}
+
+.list-wrapper {
+  max-width: 550px;
+  margin: auto;
+}
+
+/*TodoList Item */
+
+.todo-item-container {
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 16px;
+  position: relative;
+  box-shadow: 0 4px 8px var(--main-color);
+}
+
+.buttons-container {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+
+button {
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.completed-button {
+  display: inline-block;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+.completed-button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.remove-button {
+  display: inline-block;
+  background-color: #fafafa;
+  border: 2px solid var(--danger-color);
+  margin-left: 8px;
+  color: var(--danger-color);
+}
+.remove-button:hover {
+  background-color: var(--danger-color);
+  color: #fafafa;
+}
+
+/* New Todo Form*/
+
+.new-todo-form {
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px var(--secondary-color);
+}
+
+.new-todo-input {
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  border-radius: 8px;
+  width: 70%;
+  outline: none;
+}
+.new-todo-input:focus {
+  border-bottom: 2px solid var(--secondary-color);
+}
+.new-todo-button {
+  font-size: 16px;
+  padding: 6px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 0.55rem;
+  outline: none;
+  cursor: pointer;
+  margin-left: 8px;
+  width: 20%;
+  background-color: inherit;
+}
+.new-todo-button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
